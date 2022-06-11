@@ -1,0 +1,123 @@
+query GetAllJobs {
+  getAllJobs {
+    _id
+    jobCompanyName
+    jobImage
+    jobCompanyLocation
+    jobCompanyField
+    jobCompanyLogo
+    jobCompanyEmail
+    jobCompanyOffers_one
+    jobCompanyOffers_two
+    jobCompanyOffers_three
+    jobCompanyOffers_four
+    jobCompanyOffers_five
+    jobCompanyOffers_six
+    jobTitle
+    jobPostedOn
+    jobValidUntil
+    jobSpots
+    jobRequiredExpirience
+    jobRegion
+    jobLocation
+    jobCategory
+    jobSalary
+    jobWorkHours
+    jobDescription
+    jobResponsibility_one
+    jobResponsibility_two
+    jobResponsibility_three
+    jobResponsibility_four
+    jobResponsibility_five
+    jobRequirements_one
+    jobRequirements_two
+    jobRequirements_three
+    jobRequirements_four
+    jobRequirements_five
+  }
+}
+
+query GetJobById($id: String!) {
+  getJobById(_id: $id) {
+    _id
+    jobCompanyName
+    jobImage
+    jobCompanyLocation
+    jobCompanyField
+    jobCompanyLogo
+    jobCompanyEmail
+    jobCompanyOffers_one
+    jobCompanyOffers_two
+    jobCompanyOffers_three
+    jobCompanyOffers_four
+    jobCompanyOffers_five
+    jobCompanyOffers_six
+    jobTitle
+    jobPostedOn
+    jobValidUntil
+    jobSpots
+    jobRequiredExpirience
+    jobRegion
+    jobLocation
+    jobCategory
+    jobSalary
+    jobWorkHours
+    jobDescription
+    jobResponsibility_one
+    jobResponsibility_two
+    jobResponsibility_three
+    jobResponsibility_four
+    jobResponsibility_five
+    jobRequirements_one
+    jobRequirements_two
+    jobRequirements_three
+    jobRequirements_four
+    jobRequirements_five
+  }
+}
+
+mutation CreateJobApplication($data: NewJobArguments!) {
+  createJobApplication(data: $data) {
+    _id
+    jobCompanyName
+    jobImage
+    jobCompanyLocation
+    jobCompanyField
+    jobCompanyLogo
+    jobCompanyEmail
+    jobCompanyOffers_one
+    jobCompanyOffers_two
+    jobCompanyOffers_three
+    jobCompanyOffers_four
+    jobCompanyOffers_five
+    jobCompanyOffers_six
+    jobTitle
+    jobPostedOn
+    jobValidUntil
+    jobSpots
+    jobRequiredExpirience
+    jobRegion
+    jobLocation
+    jobCategory
+    jobSalary
+    jobWorkHours
+    jobDescription
+    jobResponsibility_one
+    jobResponsibility_two
+    jobResponsibility_three
+    jobResponsibility_four
+    jobResponsibility_five
+    jobRequirements_one
+    jobRequirements_two
+    jobRequirements_three
+    jobRequirements_four
+    jobRequirements_five
+  }
+}
+
+mutation DeleteJobApplication($id: String!) {
+  deleteJobApplication(_id: $id) {
+    _id
+  }
+}
+

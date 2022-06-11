@@ -1,0 +1,74 @@
+mutation Login($email: String!, $password: String!) {
+  login(email: $email, password: $password)
+}
+
+query CurrentUser {
+  currentUser {
+    _id
+    userImage
+    userProffesion
+    userFirstName
+    userMiddleName
+    userLastName
+    email
+    userLocationCity
+    aboutMe
+    userSkills_one
+    userSkills_one_percent
+    userSkills_two
+    userSkills_two_percent
+    userSkills_three
+    userSkills_three_percent
+    userSkills_four
+    userSkills_four_percent
+    userSkills_five
+    userSkills_five_percent
+    userLocationState
+    userCertificate_or_Education_one
+    userCertificate_or_Education_two
+    userCertificate_or_Education_three
+    userCertificate_or_Education_four
+    userCertificate_or_Education_five
+    userPreviousJob_one
+    userPreviousJob_two
+    userPreviousJob_three
+    userPreviousJob_four
+    userPreviousJob_five
+  }
+}
+
+mutation CreateUser($data: CreateUserInput!) {
+  createUser(data: $data) {
+    _id
+    userImage
+    userProffesion
+    userFirstName
+    userMiddleName
+    userLastName
+    email
+    userLocationCity
+    aboutMe
+    userSkills_one
+    userSkills_one_percent
+    userSkills_two
+    userSkills_two_percent
+    userSkills_three
+    userSkills_three_percent
+    userSkills_four
+    userSkills_four_percent
+    userSkills_five
+    userSkills_five_percent
+    userLocationState
+    userCertificate_or_Education_one
+    userCertificate_or_Education_two
+    userCertificate_or_Education_three
+    userCertificate_or_Education_four
+    userCertificate_or_Education_five
+    userPreviousJob_one
+    userPreviousJob_two
+    userPreviousJob_three
+    userPreviousJob_four
+    userPreviousJob_five
+    password
+  }
+}
